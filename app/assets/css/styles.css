@@ -1,0 +1,373 @@
+/* 
+  TO DO
+
+  / 1. Get to know the breakpoints of bootstrap's grid system.
+  / 2. Immediately add the media queries and the corresponding properties.
+  / 3. Watch out for the tablet version's layout.
+  4. Delete these comments only after you're done with the whole project.
+
+
+  NOTES: 
+  1. Mobile layout first, then tablet, then desktop.
+
+*/
+
+
+
+/* 
+    Reset / The reset for container-fluid and row was taken cared of by Bootstrap, disabling horizontal scroll for mobile 
+*/
+
+html {
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+/* 
+    General Styles.
+
+    Body background color,
+    Universal font for links, paragraphs, and headings.
+*/
+
+body {
+  background-color: #eeeeee;
+}
+
+img {
+  border-radius: 0;
+}
+
+
+
+/* 
+    Top Navigation for all pages.
+*/
+
+#top-nav {
+  background-color: #f9f9f9;
+}
+
+.nav-link {
+  color: #2c3e50;
+  transition: 500ms;
+}
+
+
+
+
+/* 
+    Top Navigation - pseudo-attributes.
+*/
+
+
+.btn-outline-secondary:hover {
+  background-color: transparent;
+}
+
+
+
+
+
+
+
+/* 
+    
+    MEDIA QUERIES
+
+
+    Mobile Styles - XS  
+*/ 
+
+@media only screen and (max-width: 576px) {
+
+  .navbar-brand {
+    margin-bottom: 5%;
+  }
+
+  .nav-link {
+    font-size: 0.8em;
+    margin-left: 40%;
+  }
+
+  .cart-btn {
+    margin-left: 10%;
+  }
+
+  .login-btn,
+  .register-btn {
+    border: none;
+  }
+
+  .hero {
+    margin-top: 15%;
+  }
+
+  .hero-card-left,
+  .hero-card-right,
+  .hero-card-right-2 {
+    border: none;
+    background-color: transparent;
+  }
+
+  .hero-card-right {
+    display: none;
+  }
+
+  .hero-card-right-2 {
+    margin-top: 35%;
+    margin-bottom: 15%;
+  }
+
+  .welcome-banner-card {
+    text-align: center;
+  }
+
+  .welcome-banner {
+    font-size: 1.8em;
+    position: relative;
+    z-index: 5;
+  }
+
+  .welcome-banner::before {
+    content: url("../images/nw-logo-sm.png");
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 10px;
+    top: -150%;
+    left: 35%;
+    z-index: -1;
+  }
+
+  .cta-btn {
+    background-color: #4B874D;
+    color: #ECF0F1;
+    padding: 10% 15%;
+    margin-top: 10%;
+    font-size: 1.2em;
+    border: 2px solid #17422F;
+  }
+
+  .cta-register-btn {
+    display: none;
+  }
+
+  .featured-header h2 {
+    text-align: center;
+    margin-bottom: 10%;
+    border-bottom: 1px solid #000;
+    padding-bottom: 3%;
+  }
+
+  .carousel-img {
+    height: 280px;
+    width: 360px;
+  }
+
+}
+
+/* 
+    Small Screens - S
+*/
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+
+
+}
+
+/* 
+    Medium screens - MD
+*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+
+}
+
+/* 
+    Large screens - LG
+*/
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+
+}
+
+/* 
+    Large screens - LG
+*/
+@media only screen and (min-width: 1200px) {
+
+  .nav-link {
+    font-size: 1em;
+    margin-left: 0;
+    width: 70%;
+    /* border: 1px solid #000; */
+    text-align: center;
+  }
+  
+  .nav-link:hover, .active {
+    border-bottom: 1px solid #4B874D;
+    color: #4B874D;
+    transition: 500ms;
+  }
+
+  .cart-btn {
+    margin-left: -20%;
+  }
+
+  .register-btn {
+    border: none;
+  }
+
+  .login-btn {
+    margin-left: 45%;
+    background-color: #4B874D;
+    color: #ECF0F1;
+    border: none;
+  }
+
+  .login-btn:hover {
+    background-color: #4B874D;
+    color: #ECF0F1;
+    border: none;
+  }
+
+  .animate-btn {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .animate-btn:hover {
+    color: white;
+    transition: 250ms;
+  }
+  
+  .animate-btn:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background-color: #17422F;
+    transition: right 250ms;
+    z-index: -1;
+    border-radius: 10%;
+  }
+  
+  .animate-btn:hover:before {
+    right: 0;
+  }
+
+  .hero {
+    height: 100vh;
+    position: relative;
+    /* border-bottom: 1px solid grey; */
+    margin-bottom: 0%;
+  }
+  
+  .hero-card-left {
+  
+    position: absolute;
+    left: 1%;
+    top: 5%;
+    background-color: transparent;
+    border: none;
+  }
+  
+  .hero-card-right {
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    background-color: transparent;
+    border: none;
+  }
+  
+  .hero-card-right-2 {
+   
+    position: absolute;
+    left: 50%;
+    top: 41%;
+    padding-top: 7%;
+    padding-left: 2%;
+    background-color: transparent;
+    border: none;
+  }
+
+  .cta-btn {
+    
+    background-color: #4B874D;
+    color: #ECF0F1;
+    border: none;
+    margin-top: 3%;
+    padding: 4%;
+  }
+
+  .cta-register-btn {
+    border: none;
+    background-color: transparent;
+    color: #4B874D;
+    font-size: 0.8em;
+
+  }
+
+  .cta-register-btn:hover {
+    border: none;
+    background-color: transparent;
+    color: #4B874D;
+    font-size: 0.8em;
+
+  }
+
+  /* 
+      Featured Section - HOME
+  */
+
+  .featured-header {
+    background-color: #17422F;
+    color: #ECF0F1;
+    padding: 3%;
+    margin-bottom: 5%;
+    border-radius: 15px;
+    position: relative;
+  }
+
+  .featured-header h2 {
+    font-size: 3.8em;
+    letter-spacing: 2px;
+  }
+
+  .featured-cta {
+    position: absolute;
+    top: 20%;
+    right: 4%;
+    font-size: 5.2em;
+  }
+
+
+  .carousel-item {
+    position: relative;
+  }
+
+  .carousel-img {
+    width: 500px; 
+  }
+
+  .carousel-img-label {
+    background-color: rgba(46, 46, 46, .5);
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    z-index: 5;
+    padding: 3%;
+  }
+
+
+}
