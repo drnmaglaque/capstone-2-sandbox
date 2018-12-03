@@ -1,9 +1,10 @@
 <?php 
 
 // For windows version, just remove the ":8080" from the URL below.
-define("ASSETS_PATH", "http://localhost:8080/capstone-2/app/assets/");
-define("IMG_PATH", "http://localhost:8080/capstone-2/app/assets/images/");
-define("PARTIALS_PATH", "http://localhost:8080/capstone-2/app/partials/");
+define("ASSETS_PATH", "http://localhost/capstone-2-sb/app/assets/");
+define("IMG_PATH", "http://localhost/capstone-2-sb/app/assets/images/");
+define("PARTIALS_PATH", "http://localhost/capstone-2-sb/app/partials/");
+
 
 ?>
 
@@ -16,7 +17,7 @@ define("PARTIALS_PATH", "http://localhost:8080/capstone-2/app/partials/");
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <title>NoteWorthy | Home</title>
+  <title>NoteWorthy | <?php echo $page_title ?></title>
 
   <!-- Dependencies starting with Bootstrap -->
   <!-- Non-CDN -->
@@ -68,20 +69,6 @@ define("PARTIALS_PATH", "http://localhost:8080/capstone-2/app/partials/");
 
   -->
  
-    <div class="container-fluid px-0">
-      <div class="row col-12 px-0 mx-0">
-        
-        <header id="top-nav" class="col-12 px-0">
-          <nav class="navbar navbar-expand-md col-12 mx-0 px-0">
-            <div class="navbar-brand col-8 offset-2 offset-md-1 col-md-2"><img class="col-12 img-fluid" src="<?php echo ASSETS_PATH; ?>images/nw-logo.png" alt=""></div>
-            <ul class="navbar-nav navbar-expand col-12 d-flex justify-content-start align-items-center offset-md-2">
-              <li class="nav-item offset-0 col-2 col-md-1"><a class="nav-link active" href="">About</a></li>
-              <li class="nav-item col-2 col-md-1"><a class="nav-link" href="">Shop</a></li>
-              <li class="nav-item col-2 col-md-1"><a class="nav-link cart-btn" href=""><i class="fas fa-cart-arrow-down"></i> <span>2</span></a></li>
-              <li class="nav-item col-2 offset-1 col-md-1"><a class="nav-link btn btn-outline-secondary login-btn animate-btn" href="">Login</a></li>
-              <li class="nav-item col-2 col-md-1"><a class="nav-link btn btn-outline-secondary register-btn" href="">Register</a></li>
-            </ul> <!-- End of links -->
-          </nav> <!-- End of Navigation -->
-        </header> <!-- End of top nav -->
+    
 
       

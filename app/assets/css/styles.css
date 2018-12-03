@@ -45,6 +45,16 @@ img {
   border-radius: 0;
 }
 
+.catalog-sidebar-container {
+  /*border: 1px solid red;*/
+  margin-top: 5%;
+}
+
+.items-group-container {
+  /*border: 1px solid blue;*/
+  margin-top: 5%;
+}
+
 
 
 /* 
@@ -186,7 +196,11 @@ img {
     Medium screens - MD
 */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-
+  
+  .product-card {
+    float: left;
+    height: 300px;
+  }
 
 }
 
@@ -194,6 +208,11 @@ img {
     Large screens - LG
 */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+  
+  .product-card {
+    float: left;
+    height: 300px;
+  }
 
 
 }
@@ -368,6 +387,11 @@ img {
     z-index: 5;
     padding: 3%;
   }
+  
 
+  .product-card {
+    float: left;
+    height: 300px;
+  }
 
 }
